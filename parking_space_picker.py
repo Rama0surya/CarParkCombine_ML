@@ -24,7 +24,7 @@ def mouse_events(event, x, y, flag, param):
 
     if event == cv2.EVENT_LBUTTONDOWN:
         pt1_x, pt1_y = x, y
-
+ 
     elif event == cv2.EVENT_LBUTTONUP:
         pt2_x, pt2_y = x, y
         if not delete_mode:
@@ -42,7 +42,7 @@ def mouse_events(event, x, y, flag, param):
         pickle.dump(park_positions, f)
 
 while True:
-    img = cv2.imread('example_image.png')
+    img = cv2.imread('pic4.jpg')
 
     for position in park_positions:
         if len(position) == 5:  # Pastikan tuple memiliki jumlah elemen yang sesuai
